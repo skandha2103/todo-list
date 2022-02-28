@@ -1,0 +1,11 @@
+<!-- <input type="text" id="myInput" placeholder="Things to be done..." />
+      <span class="addBtn" id="add_button">Add</span> -->
+
+<form (ngSubmit)="onSubmit()">
+    <div class="input-group">
+        <input type="text" id="title" name="title" class="form-control" placeholder="Things to be done..." [(ngModel)]="title">
+        <button id="add_button" type="submit" style="border-width:0px;" class="input-group-addon btn-outline-secondary addBtn">
+            Add
+        </button>
+    </div>
+</form>
